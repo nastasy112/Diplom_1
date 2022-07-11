@@ -1,9 +1,14 @@
 package praktikum;
 
+import lombok.EqualsAndHashCode;
+
+import java.util.Objects;
+
 /**
  * Модель булочки для бургера.
  * Булочке можно дать название и назначить цену.
  */
+@EqualsAndHashCode
 public class Bun {
 
     public String name;
@@ -21,5 +26,4 @@ public class Bun {
     public float getPrice() {
         return price;
     }
-
 }
